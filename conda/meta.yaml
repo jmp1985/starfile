@@ -6,8 +6,7 @@ package:
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 36f44a244fb891b604e44d31f20b68ffabaec3eb14c57f9eb66c2a5acf94427d
+  path: ..
 
 build:
   number: 0
@@ -29,14 +28,4 @@ test:
     - starfile
 
 about:
-  home: The package home page
-  license: BSD
-  license_family: BSD
-  license_file: 
   summary: "STAR file reading and writing in python."
-  doc_url: 
-  dev_url: 
-
-extra:
-  recipe-maintainers:
-    - your-github-id-here
